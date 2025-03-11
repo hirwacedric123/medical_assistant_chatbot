@@ -5,7 +5,7 @@ flask
 pypdf
 python-dotenv
 pinecone[grpc]
-longchain-pinecone
-longchain_community
-longchain_openai
-longchain_experimental
+langchain-pinecone
+langchain_community
+langchain_openai
+langchain_experimental
