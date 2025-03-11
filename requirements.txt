@@ -3,9 +3,9 @@ sentence-transformers==2.2.2
 longchain
 flask
 pypdf
-pyhton-dotenv
+python-dotenv
 pinecone[grpc]
 longchain-pinecone
 longchain_community
-lonagchain_openai
+longchain_openai
 longchain_experimental
