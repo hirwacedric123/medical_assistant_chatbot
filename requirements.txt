@@ -1,4 +1,11 @@
 ctransformers==0.2.5
 sentence-transformers==2.2.2
-longchain==0.0.225
+longchain
 flask
+pypdf
+pyhton-dotenv
+pinecone[grpc]
+longchain-pinecone
+longchain_community
+lonagchain_openai
+longchain_experimental
