@@ -11,8 +11,5 @@ list_of_files = [
     "requirements.txt",
     "setup.py",
     "app.py",
-    "research/trials.ipynb"
-
-
-                 
+    "research/trials.ipynb"                 
 ]
