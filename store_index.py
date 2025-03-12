@@ -1,9 +1,9 @@
 from src.helper import load_pdf, text_split, download_hugging_face_embeddings
-from langchain.vectorstores import Pinecone
-import pinecone
 from dotenv import load_dotenv
-import os
 from langchain_pinecone import PineconeVectorStore
+import os
+import pinecone
+from pinecone import Pinecone
 
 load_dotenv()
 
@@ -17,13 +17,10 @@ extracted_data = load_pdf("data/")
 text_chunks = text_split(extracted_data)
 embeddings = download_hugging_face_embeddings()
 
-
-#Initializing the Pinecone
-pinecone.init(api_key=PINECONE_API_KEY,
-              environment=PINECONE_API_ENV)
+pc = Pinecone(api_key=PINECONE_API_KEY)
+index_name = "medicalbot"
 
 
-index_name="medicalbot"
 
 #Creating Embeddings for Each of The Text Chunks & storing
 docsearch= PineconeVectorStore.from_documents(
