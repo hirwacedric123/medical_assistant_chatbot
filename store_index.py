@@ -5,6 +5,8 @@ import os
 from pinecone import Pinecone, ServerlessSpec
 from langchain_community.vectorstores import Pinecone as LangchainPinecone
 
+
+
 load_dotenv()
 
 PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
