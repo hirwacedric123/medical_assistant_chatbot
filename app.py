@@ -8,6 +8,11 @@ from langchain.chains import RetrievalQA
 from dotenv import load_dotenv
 from src.prompt import *
 import os
+from langchain_openai import OpenAI
+from langchain_pinecone import PineconeVectorStore
+
+from langchain_core.prompts import ChatPromptTemplate
+
 
 app = Flask(__name__)
 
